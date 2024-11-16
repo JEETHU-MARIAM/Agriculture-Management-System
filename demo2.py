@@ -63,7 +63,7 @@ class Application():
 
     def ajax(self, *args, **kwargs):
         try:
-            self.conn = mysql.connector.connect(host='localhost', database='farm_project', user='root', password='jeethu_pass22')
+            self.conn = mysql.connector.connect(host='localhost', database='farm_project', user='root', password='*****')
             self.mycursor = self.conn.cursor()
             get_id = self.enteride.get()
             self.mycursor.execute("SELECT * FROM farmer WHERE id= %s", [get_id])
@@ -191,7 +191,7 @@ class Application():
         try:
             # Reconnect and create a new cursor
             self.conn = mysql.connector.connect(host='localhost', database='farm_project', user='root',
-                                                password='jeethu_pass22')
+                                                password='*****')
             self.mycursor = self.conn.cursor()
 
             for i, product in enumerate(Application.products_list):

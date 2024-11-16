@@ -4,7 +4,7 @@ import tkinter as tk
 mydb = mysql.connector.connect(
   host="localhost",
   user="root",
-  password="jeethu_pass22",
+  password="*****",
   database="farm_project"
 )
 def back_page():
